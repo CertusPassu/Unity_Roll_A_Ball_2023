@@ -26,7 +26,7 @@ public class EventManager : MonoBehaviour
     private void ChangeScene(int destroyedEnemies, int requiredEnemies)
     {
         if (SceneManager.GetActiveScene().buildIndex == 3)
-            requiredEnemies = 8;
+            requiredEnemies = 2;
         if (destroyedEnemies >= requiredEnemies)
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
