@@ -12,6 +12,8 @@ public class WallsPositionRotation
 public class ScenarioData : ScriptableObject
 {
     public GameObject WallePrefab;
+    public int numberOfPrefabsToCreate;
+    public string prefabName;
     public List<WallsPositionRotation> Walls; 
  
 }

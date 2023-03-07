@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] TMP_Text destroyText;
     [SerializeField] TMP_Text scoreText;
     [SerializeField] ScenarioData scenarioWalls;
+    private int currentWallIndex = 0;
 
     #region Events delegate
     public delegate void ScoreEvent(int ScoreValue);
@@ -75,7 +76,15 @@ public class Player : MonoBehaviour
     }
     private void AddWall()
     {
-        Instantiate(scenarioWalls.WallePrefab, scenarioWalls.Walls[_destroyedEnemies].position, scenarioWalls.Walls[_destroyedEnemies].rotation);
+        if (currentWallIndex >= scenarioWalls.Walls.Count)
+        {
+            currentWallIndex = 0;
+        }
+
+        WallsPositionRotation wall = scenarioWalls.Walls[currentWallIndex];
+        Instantiate(scenarioWalls.WallePrefab, wall.position, wall.rotation);
+
+        currentWallIndex++;
     }
 
 }

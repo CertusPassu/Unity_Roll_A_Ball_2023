@@ -320,22 +320,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2472624905697260548, guid: 0d522dccbaa8ea342b905bbb1c23d00c, type: 3}
   m_PrefabInstance: {fileID: 5348223476614112676}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &379344879
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379344878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40aef21d5be97044aa9e94706c71302f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.12
-  destroyText: {fileID: 0}
-  scoreText: {fileID: 0}
-  scenarioWalls: {fileID: 0}
 --- !u!54 &379344880
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -957,7 +941,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c07d3a9684c11494fa0057296173d264, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 1785978938}
 --- !u!4 &1262116740
 Transform:
   m_ObjectHideFlags: 0
